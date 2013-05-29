@@ -18,6 +18,11 @@
 		2DD265FA17561C3400D7F9A6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD265F917561C3400D7F9A6 /* Default-568h@2x.png */; };
 		2DD265FD17561C3400D7F9A6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD265FB17561C3400D7F9A6 /* MainStoryboard.storyboard */; };
 		2DD2660017561C3400D7F9A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD265FF17561C3400D7F9A6 /* ViewController.m */; };
+		2DD2660917561CD700D7F9A6 /* DeviceType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2660817561CD700D7F9A6 /* DeviceType.m */; };
+		2DD2660B17561D7600D7F9A6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD2660A17561D7600D7F9A6 /* MapKit.framework */; };
+		2DD2660D17561D7D00D7F9A6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD2660C17561D7D00D7F9A6 /* CoreLocation.framework */; };
+		2DD2661117561EE500D7F9A6 /* BottomAddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2661017561EE500D7F9A6 /* BottomAddressView.m */; };
+		2DD266131756337B00D7F9A6 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD266121756337B00D7F9A6 /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,13 @@
 		2DD265FC17561C3400D7F9A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2DD265FE17561C3400D7F9A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2DD265FF17561C3400D7F9A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2DD2660717561CD700D7F9A6 /* DeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceType.h; sourceTree = "<group>"; };
+		2DD2660817561CD700D7F9A6 /* DeviceType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceType.m; sourceTree = "<group>"; };
+		2DD2660A17561D7600D7F9A6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2DD2660C17561D7D00D7F9A6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2DD2660F17561EE400D7F9A6 /* BottomAddressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomAddressView.h; sourceTree = "<group>"; };
+		2DD2661017561EE500D7F9A6 /* BottomAddressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomAddressView.m; sourceTree = "<group>"; };
+		2DD266121756337B00D7F9A6 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD266131756337B00D7F9A6 /* AddressBook.framework in Frameworks */,
+				2DD2660D17561D7D00D7F9A6 /* CoreLocation.framework in Frameworks */,
+				2DD2660B17561D7600D7F9A6 /* MapKit.framework in Frameworks */,
 				2DD265E417561C3300D7F9A6 /* UIKit.framework in Frameworks */,
 				2DD265E617561C3300D7F9A6 /* Foundation.framework in Frameworks */,
 				2DD265E817561C3300D7F9A6 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +88,9 @@
 		2DD265E217561C3300D7F9A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2DD266121756337B00D7F9A6 /* AddressBook.framework */,
+				2DD2660A17561D7600D7F9A6 /* MapKit.framework */,
+				2DD2660C17561D7D00D7F9A6 /* CoreLocation.framework */,
 				2DD265E317561C3300D7F9A6 /* UIKit.framework */,
 				2DD265E517561C3300D7F9A6 /* Foundation.framework */,
 				2DD265E717561C3300D7F9A6 /* CoreGraphics.framework */,
@@ -88,6 +106,8 @@
 				2DD265FB17561C3400D7F9A6 /* MainStoryboard.storyboard */,
 				2DD265FE17561C3400D7F9A6 /* ViewController.h */,
 				2DD265FF17561C3400D7F9A6 /* ViewController.m */,
+				2DD2660E17561E3100D7F9A6 /* Custom Views */,
+				2DD2660617561C8400D7F9A6 /* Utilities */,
 				2DD265EA17561C3300D7F9A6 /* Supporting Files */,
 			);
 			path = MapCurrentLocation;
@@ -105,6 +125,24 @@
 				2DD265F917561C3400D7F9A6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DD2660617561C8400D7F9A6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2660717561CD700D7F9A6 /* DeviceType.h */,
+				2DD2660817561CD700D7F9A6 /* DeviceType.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		2DD2660E17561E3100D7F9A6 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DD2660F17561EE400D7F9A6 /* BottomAddressView.h */,
+				2DD2661017561EE500D7F9A6 /* BottomAddressView.m */,
+			);
+			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +214,8 @@
 				2DD265F017561C3300D7F9A6 /* main.m in Sources */,
 				2DD265F417561C3400D7F9A6 /* AppDelegate.m in Sources */,
 				2DD2660017561C3400D7F9A6 /* ViewController.m in Sources */,
+				2DD2660917561CD700D7F9A6 /* DeviceType.m in Sources */,
+				2DD2661117561EE500D7F9A6 /* BottomAddressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +266,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -250,7 +290,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
