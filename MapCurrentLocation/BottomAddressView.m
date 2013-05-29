@@ -26,7 +26,7 @@
 
 - (void)addLabelsToView
 {
-    float inset = 5.0;
+    float inset = 10.0;
     
     // Title.
     self.title = [[UILabel alloc] initWithFrame:CGRectMake(0 + inset, 0 + inset, 320.0 - inset, 12.0)];
