@@ -10,6 +10,17 @@
 #define kTwoKilometers 2.0
 
 @interface ViewController ()
+{
+    MKMapView *_mapView;
+    CLLocationManager *_locationManager;
+    CLGeocoder *_geocoder;
+    BottomAddressView *_bottomView;
+}
+
+@property (nonatomic, strong) MKMapView *mapView;
+@property (nonatomic, strong) CLLocationManager *locationManager;
+@property (nonatomic, strong) CLGeocoder *geocoder;
+@property (nonatomic, strong) BottomAddressView *bottomView;
 
 @end
 
@@ -53,9 +64,16 @@
 #pragma mark -
 #pragma mark - Location Manager
 
+- (CLLocationManager *)locationManager
+{
+    if (_locationManager == nil)
+        _locationManager = [[CLLocationManager alloc] init];
+    
+    return _locationManager;
+}
+
 - (void)startLocationManager
 {
-    self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     [self.locationManager startUpdatingLocation];
 }
@@ -142,7 +160,7 @@
 }
 
 #pragma mark -
-#pragma mark Orientation
+#pragma mark - Orientation
 
 - (NSUInteger)supportedInterfaceOrientations
 {

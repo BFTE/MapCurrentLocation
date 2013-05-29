@@ -13,16 +13,5 @@
 #import "BottomAddressView.h"
 
 @interface ViewController : UIViewController <CLLocationManagerDelegate>
-{
-    MKMapView *_mapView;
-    CLLocationManager *_locationManager;
-    CLGeocoder *_geocoder;
-    BottomAddressView *_bottomView;
-}
-
-@property (nonatomic, strong) MKMapView *mapView;
-@property (nonatomic, strong) CLLocationManager *locationManager;
-@property (nonatomic, strong) CLGeocoder *geocoder;
-@property (nonatomic, strong) BottomAddressView *bottomView;
 
 @end
