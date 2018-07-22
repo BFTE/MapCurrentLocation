@@ -34,7 +34,8 @@
 #pragma mark - View Lifecycle
 
 - (void)viewDidLoad
-{    
+{
+    NSLog(@"view did load");
     [self createBottomView];
     [self createMapView];
     
@@ -43,12 +44,14 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    NSLog(@"view did appear");
     [self startLocationManager];
     [super viewDidAppear:YES];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
+    NSLog(@"view did disappear");
     [self stopLocationManager];
     [super viewDidDisappear:YES];
 }
