@@ -30,7 +30,6 @@
 @synthesize geocoder = _geocoder;
 @synthesize bottomView = _bottomView;
 
-#pragma mark -
 #pragma mark - View Lifecycle
 
 - (void)viewDidLoad
@@ -64,7 +63,6 @@
     [self.mapView setRegion:currentRegion animated:YES];
 }
 
-#pragma mark -
 #pragma mark - Location Manager
 
 - (CLLocationManager *)locationManager
@@ -86,7 +84,6 @@
     [self.locationManager stopUpdatingLocation];
 }
 
-#pragma mark -
 #pragma mark - Location Manager Delegate Methods
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -101,7 +98,6 @@
     [self translateLocationToNearAddress:currentLocation];
 }
 
-#pragma mark -
 #pragma mark - Geocoder
 
 - (CLGeocoder *)geocoder
@@ -138,7 +134,6 @@
     self.bottomView.address.text = address;
 }
 
-#pragma mark -
 #pragma mark - Create Subviews
 
 - (void)createMapView
@@ -162,7 +157,6 @@
     [self.view addSubview:self.bottomView];
 }
 
-#pragma mark -
 #pragma mark - Orientation
 
 - (NSUInteger)supportedInterfaceOrientations
