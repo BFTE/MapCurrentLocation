@@ -173,12 +173,18 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "MacBook Damian";
+				TargetAttributes = {
+					2DD265DF17561C3300D7F9A6 = {
+						DevelopmentTeam = 6584RL2CME;
+					};
+				};
 			};
 			buildConfigurationList = 2DD265DB17561C3300D7F9A6 /* Build configuration list for PBXProject "MapCurrentLocation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 2DD265D717561C3300D7F9A6;
@@ -300,9 +306,11 @@
 		2DD2660417561C3400D7F9A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 6584RL2CME;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapCurrentLocation/MapCurrentLocation-Prefix.pch";
 				INFOPLIST_FILE = "MapCurrentLocation/MapCurrentLocation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -311,9 +319,11 @@
 		2DD2660517561C3400D7F9A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 6584RL2CME;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapCurrentLocation/MapCurrentLocation-Prefix.pch";
 				INFOPLIST_FILE = "MapCurrentLocation/MapCurrentLocation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -338,6 +348,7 @@
 				2DD2660517561C3400D7F9A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
