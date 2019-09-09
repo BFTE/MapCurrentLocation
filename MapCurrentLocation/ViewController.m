@@ -89,7 +89,6 @@
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     self.bottomView.title.text = @"Ustalam adres...";
-    
     // Get the most recent location update, the last one.
     CLLocation *currentLocation = [locations lastObject];
     CLLocationCoordinate2D currentCoordinate = currentLocation.coordinate;
